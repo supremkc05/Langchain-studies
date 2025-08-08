@@ -11,7 +11,6 @@ while True:
     user_input = input("You: ")
     if user_input == 'exit':
         break
-    
     chat_history.append(HumanMessage(content=user_input))
     result = model.invoke(chat_history)
     
